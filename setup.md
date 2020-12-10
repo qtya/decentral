@@ -35,12 +35,14 @@ Install oh-my-zsh `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/ma
 
 When prompted whether to set zsh as your default shell, select 'yes'.
 
+Type `vim .zshrc` while in your home directory, and change the theme from whatever it is to `candy`. 
+
 ## Setup your usb storage device
 
 1. Plug in your usb device
 1. Find it by typing `sudo fdisk -l`
 1. Create a desired mountpoint by `mkdir /mnt/your/mount/point`
 1. Edit the file responsible for boot time mounts by typing `sudo vim /etc/fstab`
-1. Add a line to the table, where <file system> is your device's name listed by fdisk, <dir> is where you want it to be mounted, <type> is either ext4, vfat, fat32 or ntfs, set <options> to default, <dump> to '0' and <pass> to '2' (separate the entrys with tabs, don't worry about it looking wonky and shifted, it will work fine)
+1. Add a line to the table, where \<file system> is your device's name listed by fdisk, \<dir> is where you want it to be mounted, \<type> is either ext4, vfat, fat32 or ntfs, set \<options> to default, \<dump> to '0' and \<pass> to '2' (separate the entrys with tabs, don't worry about it looking wonky and shifted, it will work fine)
 
  
